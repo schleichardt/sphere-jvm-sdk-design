@@ -25,3 +25,77 @@ table.custom, table.custom th, table.custom td {
     border: 1px solid black;
     border-collapse: collapse;
 }
+
+/* CustomObjectDocumentation */
+
+.to-top {
+  text-align: right;
+}
+
+.to-top-btn {
+  background: #F8981D;
+  border: none;
+  padding: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+/* ProductSearchDocumentation */
+
+.search-phases-img {
+  padding: 2em;
+  border: 2px solid #4A6782;
+  margin-bottom: 0.5em;
+}
+
+.image-caption {
+  color: #7E7E7E;
+}
+
+/* ReleaseNotes */
+
+.show-more:hover {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+
+/* GettingStarted */
+
+.undefined {
+  background: #DEE3E9;
+}
+
+.reveal-imports {
+  border-radius: 0;
+  background: #4D7A97;
+  color: #FFF;
+  border: none;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.test-code-hidden {
+  background: #F0F0F0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: none;
+}
+
+td, th {
+  padding: 0.7em;
+  background: #DEE3E9;
+}
+
+th {
+  background: #4D7A97;
+  color: #FFF;
+}

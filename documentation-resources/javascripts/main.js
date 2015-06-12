@@ -35,3 +35,19 @@
         $(this).siblings(".code-example-imports").toggle();
     });
 })();
+
+// ReleaseNotes - toggling hidden div
+
+$( ".show-more" ).click(function() {
+  event.preventDefault();
+  $( ".hidden" ).slideToggle( "slow", function() {
+    // Animation complete.
+  });
+});
+
+//GettingStarted - toggling test code hidden div
+
+$(".test-code").click(function() {
+    event.preventDefault();
+    $(this).closest('div').find(".test-code-hidden").toggleClass("hidden");
+});
