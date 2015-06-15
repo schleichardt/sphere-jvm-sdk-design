@@ -40,14 +40,6 @@
 
 $( ".show-more" ).click(function() {
   event.preventDefault();
-  $( ".hidden" ).slideToggle( "slow", function() {
-    // Animation complete.
+  $( ".hidden" ).slideToggle( "fast", function() {
   });
-});
-
-//GettingStarted - toggling test code hidden div
-
-$(".test-code").click(function() {
-    event.preventDefault();
-    $(this).closest('div').find(".test-code-hidden").toggleClass("hidden");
 });

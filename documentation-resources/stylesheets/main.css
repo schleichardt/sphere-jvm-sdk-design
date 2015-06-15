@@ -10,15 +10,15 @@ nav.table-of-contents li { padding-top: 6px; list-style: disc inside; }
 }
 
 .new-in-release:before { content:"  NEW: "; }
-.new-in-release { background-color: #c9ffa3; border-left-color: #23bb03; }
+.new-in-release { border-left-color: #23bb03; }
 
-.removed-in-release { background-color: #F8DFD8; border-left-color: red; }
+.removed-in-release { border-left-color: red; }
 .removed-in-release:before { content:"  REMOVED: "; }
 
-.change-in-release { background-color: #f8eba2; border-left-color: #ffff09; }
+.change-in-release { border-left-color: #F8981D; }
 .change-in-release:before { content:"  CHANGE: "; }
 
-.fixed-in-release { background-color: #c2d9f8; border-left-color: #3640ff; }
+.fixed-in-release { border-left-color: #3640ff; }
 .fixed-in-release:before { content:"  FIXED: "; }
 
 table.custom, table.custom th, table.custom td {
@@ -63,6 +63,10 @@ table.custom, table.custom th, table.custom td {
   display: none;
 }
 
+.block ul {
+  list-style: none;
+}
+
 /* GettingStarted */
 
 .undefined {
@@ -98,4 +102,17 @@ td, th {
 th {
   background: #4D7A97;
   color: #FFF;
+}
+
+th.colFirst,
+th.colLast {
+  background: #4D7A97;
+}
+
+tr {
+  border: 2px solid white;
+}
+
+tr.altColor {
+  background: #FFF;
 }
