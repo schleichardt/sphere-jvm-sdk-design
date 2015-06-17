@@ -32,16 +32,18 @@
     });
 })();
 
-// Release notes - toggling hidden div and section collapse
+// ReleaseNotes - toggling hidden div
 
-$(".show-more, .show-more-section").on('click', function (event) {
-   event.preventDefault();
-   $(this).next().slideToggle("fast", function () {});
-   if($(this).is('.show-more'))
-   {
-    $(this).toggleClass("show-more-rotate");
-   }else
-   {
-    $(this).toggleClass("show-more-section-rotate");
-   }
+$( ".show-more" ).click(function() {
+  event.preventDefault();
+  $( this ).next().slideToggle( "fast", function() {
+  });
+  $( this ).toggleClass("show-more-rotate");
+});
+
+// Expand all hiden divs
+
+$( ".expand-all" ).click(function () {
+  $(".hidden").slideToggle(".hidden");
+  $(".show-more").toggleClass("show-more-rotate");
 });
