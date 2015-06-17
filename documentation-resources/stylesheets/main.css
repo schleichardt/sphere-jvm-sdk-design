@@ -59,6 +59,37 @@ table.custom, table.custom th, table.custom td {
   display: none;
 }
 
+.show-more {
+  font-size: 1em;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: 0;
+}
+
+.show-more-rotate {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+}
+
+.show-more-section {
+  font-size: 1em;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: 0;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+}
+
+.show-more-section-rotate {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+}
+
 .release-notes-legend ul li {
   list-style: none;
   margin-bottom: 0.2em;
@@ -108,8 +139,4 @@ th.colLast {
 
 tr {
   border: 2px solid white;
-}
-
-tr.altColor {
-  background: #FFF;
 }

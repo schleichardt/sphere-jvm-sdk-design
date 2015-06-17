@@ -19,10 +19,6 @@
                 toc + "</ul></nav>");
     }
 
-
-
-
-
     //moves this blocks up before the package listings
     var pullUpClass = "pull-up";
     $("." + pullUpClass).appendTo(".subTitle", 0).removeClass(pullUpClass);
@@ -36,10 +32,16 @@
     });
 })();
 
-// ReleaseNotes - toggling hidden div
+// Release notes - toggling hidden div and section collapse
 
-$( ".show-more" ).click(function() {
-  event.preventDefault();
-  $( this ).next().slideToggle( "fast", function() {
-  });
+$(".show-more, .show-more-section").on('click', function (event) {
+   event.preventDefault();
+   $(this).next().slideToggle("fast", function () {});
+   if($(this).is('.show-more'))
+   {
+    $(this).toggleClass("show-more-rotate");
+   }else
+   {
+    $(this).toggleClass("show-more-section-rotate");
+   }
 });
