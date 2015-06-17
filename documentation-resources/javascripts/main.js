@@ -40,6 +40,6 @@
 
 $( ".show-more" ).click(function() {
   event.preventDefault();
-  $( ".hidden" ).slideToggle( "fast", function() {
+  $( this ).next().slideToggle( "fast", function() {
   });
 });

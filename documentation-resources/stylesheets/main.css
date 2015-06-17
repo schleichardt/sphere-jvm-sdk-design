@@ -55,16 +55,13 @@ table.custom, table.custom th, table.custom td {
 
 /* ReleaseNotes */
 
-.show-more:hover {
-  text-decoration: underline;
-}
-
 .hidden {
   display: none;
 }
 
-.block ul {
+.release-notes-legend ul li {
   list-style: none;
+  margin-bottom: 0.2em;
 }
 
 /* GettingStarted */
