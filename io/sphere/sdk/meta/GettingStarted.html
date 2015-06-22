@@ -143,8 +143,6 @@ extends <a href="../../../../io/sphere/sdk/models/Base.html" title="class in io.
 
  <h3 id=instantiation>Instantiation</h3>
 
- <h4>Class Listing</h4>
-
  <div id="example-JavaClientInstantiationExample%s" class=code-example><button type='button' style='display: none;' class='reveal-imports'>show / hide imports</button><pre class='hide code-example-imports'><code class='java'>import io.sphere.sdk.client.SphereClient;
 import io.sphere.sdk.client.SphereClientFactory;
 </code></pre><pre><code class='java'>public class JavaClientInstantiationExample {
@@ -166,8 +164,6 @@ import io.sphere.sdk.client.SphereClientFactory;
 
  <p>You can create a <a href="../../../../io/sphere/sdk/client/SphereRequest.html" title="interface in io.sphere.sdk.client"><code>SphereRequest</code></a> yourself or use the predifined ones listed on <a href="../../../../io/sphere/sdk/meta/SphereResources.html" title="class in io.sphere.sdk.meta"><code>SphereResources</code></a>.</p>
  <p>Example:</p>
-
- <h4>Method Listing</h4>
 
  <div id="example-TaxCategoryQueryExample-exampleQuery--%s" class="code-example><pre><code class='java'>CompletionStage&lt;PagedQueryResult&lt;TaxCategory&gt;&gt; future = client.execute(TaxCategoryQuery.of().byName("de19"));
  </code><p>See the <a href="https://github.com/sphereio/sphere-jvm-sdk/blob/master/src/test/java/example/TaxCategoryQueryExample.java" target="_blank">test code</a>.</pre></div>

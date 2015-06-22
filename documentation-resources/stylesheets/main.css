@@ -131,3 +131,11 @@ th.colLast {
 tr {
   border: 2px solid white;
 }
+
+.code-example {
+  background: #f0f0f0;
+}
+
+.code-example p {
+  padding-bottom: 1em;
+}
