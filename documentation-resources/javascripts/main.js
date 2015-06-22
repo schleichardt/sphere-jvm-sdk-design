@@ -35,7 +35,6 @@
 // ReleaseNotes - toggling hidden div
 
 $( ".show-more" ).click(function() {
-  event.preventDefault();
   $( this ).nextAll(".hidden").first().slideToggle( "fast", function() {
   });
   $( this ).toggleClass("show-more-rotate");
