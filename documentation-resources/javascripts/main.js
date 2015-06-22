@@ -36,7 +36,7 @@
 
 $( ".show-more" ).click(function() {
   event.preventDefault();
-  $( this ).next().slideToggle( "fast", function() {
+  $( this ).nextAll(".hidden").first().slideToggle( "fast", function() {
   });
   $( this ).toggleClass("show-more-rotate");
 });
